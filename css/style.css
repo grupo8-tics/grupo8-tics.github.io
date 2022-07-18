@@ -1,0 +1,155 @@
+:root{
+    --dark: #4a4a4a;
+    --light-grey: #efefef;
+    --color-primario: #6610f2;
+    --white: #fff;
+}
+
+.bg-light-grey{
+    background: var(--light-grey);
+}
+
+b{
+    color: var(--color-primario);
+}
+
+.text-light{
+    color: var(--white);
+}
+
+.text-purple{
+    color: var(--color-primario);
+}
+
+#hero{
+    background: url(../img/cover.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 0;
+
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    position: relative;
+    z-index: 200;
+}
+
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+nav{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    position: absolute !important;
+    width: 100%;
+    z-index: 300;
+}
+
+#hero .container-hero {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container-hero h1{
+    font-size: 5em;
+    text-align: center;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-brand{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.navbar-nav{
+    font-size: 14px;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+p{
+    font-size: 18px;
+}
+
+.intro {
+    font-size: 22px;
+}
+
+.mt-6rem{
+    margin-top: 6rem;
+}
+
+.mb-6rem{
+    margin-bottom: 6rem;
+}
+
+li{
+    margin: 8px 0 8px 24px;
+    list-style: none;
+    position: relative;
+}
+
+ul i{
+    color: var(--color-primario);
+    position: absolute;
+    left: -36px;
+    top: 5px;
+}
+
+hr {
+    border-color: var(--color-primario);
+    opacity: .5;
+}
+
+ol i{
+    color:  var(--color-primario);
+    position: absolute;
+    left: -26px;
+    top: 4px;
+}
+
+#integrantes{
+    background: url(../img/bg-team.jpg);
+    position: relative;
+    z-index: 100;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#integrantes::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -200;
+}
+
+@media (max-width: 415px){
+    #hero{
+        background-attachment: scroll;
+    }
+}
